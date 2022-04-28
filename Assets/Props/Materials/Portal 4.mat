@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Portal
+  m_Name: Portal 4
   m_Shader: {fileID: -6465566751694194690, guid: 1527d834ad7aba044b603cc88febbf70, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -55,11 +55,25 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
-    - Vector1_55e3115a335a464fb0fe840640067a63: 5
-    - Vector1_745355f508a4473580ce7ee9efb1d283: 1
-    - Vector1_98ab2cf69e9b4d61a54b408bba12418d: 2
-    - Vector1_e40f419a2bf44e15bdc92228abfa1ad3: 5
+    - Scale: 1.28
+    - Vector1_55e3115a335a464fb0fe840640067a63: 1
+    - Vector1_745355f508a4473580ce7ee9efb1d283: 3.66
+    - Vector1_98ab2cf69e9b4d61a54b408bba12418d: 18.73
+    - Vector1_e40f419a2bf44e15bdc92228abfa1ad3: 0.2
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -76,7 +90,8 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - scale: 2
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.99636734, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
