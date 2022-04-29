@@ -1031,8 +1031,6 @@
         "m_GuidSerialized": "c1bbe837-73e9-4498-97e8-6635cc5e94b5"
     },
     "m_Name": "Color",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Color",
     "m_DefaultReferenceName": "_Color",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1149,8 +1147,6 @@
         "m_GuidSerialized": "108a0bb8-1b01-4eb3-9530-13555b80863f"
     },
     "m_Name": "Twirl Strenght",
-    "m_DefaultRefNameVersion": 0,
-    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_98ab2cf69e9b4d61a54b408bba12418d",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1224,8 +1220,6 @@
         "m_GuidSerialized": "2c484c8a-8a5e-46d8-9410-83fc6d27c59b"
     },
     "m_Name": "Scale",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Scale",
     "m_DefaultReferenceName": "Scale",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1576,8 +1570,6 @@
         "m_GuidSerialized": "b61c71f0-3d50-4124-837b-dc8a58826bda"
     },
     "m_Name": "Texture Speed",
-    "m_DefaultRefNameVersion": 0,
-    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_e40f419a2bf44e15bdc92228abfa1ad3",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
