@@ -271,12 +271,64 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2356693290911201188, guid: 7e0a3c52126be3546986525eecfbb3d1, type: 3}
+      propertyPath: sprintSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2356693291391749712, guid: 7e0a3c52126be3546986525eecfbb3d1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.50000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0a3c52126be3546986525eecfbb3d1, type: 3}
+--- !u!1 &1061707092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061707094}
+  - component: {fileID: 1061707093}
+  m_Layer: 0
+  m_Name: PostProcessing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1061707093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061707092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: e3d18cc2863071848af9187dd5755550, type: 2}
+--- !u!4 &1061707094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061707092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1579859946
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +448,10 @@ PrefabInstance:
       propertyPath: scene
       value: Lobby
       objectReference: {fileID: 0}
+    - target: {fileID: 4356458040841456244, guid: ef464d24cb13c25479648d181dad664e, type: 3}
+      propertyPath: volume
+      value: 
+      objectReference: {fileID: 1061707093}
     - target: {fileID: 4862406067237148464, guid: ef464d24cb13c25479648d181dad664e, type: 3}
       propertyPath: m_RootOrder
       value: 1
