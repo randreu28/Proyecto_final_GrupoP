@@ -8,32 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: grass
-    second: {fileID: 2100000, guid: 8c00ef288d1676e4e8e98adedaad877e, type: 2}
+    second: {fileID: 2100000, guid: 1346ede73c9013448aeca2105d8fa90b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lampLight
-    second: {fileID: 2100000, guid: 7446570750ef80143a239df60f429e63, type: 2}
+    second: {fileID: 2100000, guid: 72c93df6c3ad0344ea73c8da2944d4d7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: metal
-    second: {fileID: 2100000, guid: f152dc040cd7ebe4fb8ea4bf95e5b1dc, type: 2}
+    second: {fileID: 2100000, guid: 1346ede73c9013448aeca2105d8fa90b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: portalLight
-    second: {fileID: 2100000, guid: 82ea4f26be3e4254a8b0a1f6ebbca2c9, type: 2}
+    second: {fileID: 2100000, guid: 72c93df6c3ad0344ea73c8da2944d4d7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: rock
-    second: {fileID: 2100000, guid: faebdcbeb2bd3b24abb5ccbc28d01ecd, type: 2}
+    second: {fileID: 2100000, guid: 1346ede73c9013448aeca2105d8fa90b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wood
-    second: {fileID: 2100000, guid: cb3810e40dcb1744baf575559977de9d, type: 2}
+    second: {fileID: 2100000, guid: 1346ede73c9013448aeca2105d8fa90b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
