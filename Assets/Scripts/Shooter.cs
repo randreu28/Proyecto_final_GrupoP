@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Shooter : MonoBehaviour
 {
     // Start is called before the first frame update
+    public static Shooter instance;
     public GameObject bala;
     public Transform spawnBala;
 
@@ -32,9 +33,15 @@ public class Shooter : MonoBehaviour
 
                 shotRateTime = Time.time + shotRate;
 
+                
+
                 Destroy (newbala, 4);
+
             }
         }
         
     }
+
+
+    
 } 

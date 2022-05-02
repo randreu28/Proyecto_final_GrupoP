@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6742587852780694787}
   - component: {fileID: 2026043557869297339}
   - component: {fileID: 7514208207838384115}
+  - component: {fileID: 4683204668626689462}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -111,4 +112,17 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &4683204668626689462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4779111492883904634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef24ddc8ec5d2e4aba41b60db80dfea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemigo: {fileID: 8985460098458419892, guid: 1ac7c59e7523d6f47ae606fa2135b83a, type: 3}
