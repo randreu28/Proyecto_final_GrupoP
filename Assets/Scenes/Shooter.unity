@@ -1574,11 +1574,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2356693291570978458, guid: 7e0a3c52126be3546986525eecfbb3d1, type: 3}
       propertyPath: m_VerticalAxis.m_MaxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2356693291570978458, guid: 7e0a3c52126be3546986525eecfbb3d1, type: 3}
       propertyPath: m_HorizontalAxis.m_MaxSpeed
-      value: 150
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0a3c52126be3546986525eecfbb3d1, type: 3}
