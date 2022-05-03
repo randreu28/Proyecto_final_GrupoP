@@ -22,7 +22,6 @@ public class EnemigoController : MonoBehaviour
 
     void Start()
     {
-        
         agent = GetComponent<NavMeshAgent>();
         shootTime = shootInterval;
         chaseTime = chaseInterval;
@@ -33,16 +32,23 @@ public class EnemigoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 posNoRot = new Vector3(target.position.x,transform.position.y, target.position.z); //asi no se inclina
-        transform.LookAt(posNoRot); //seguimiento de player
-
-        distanceToTarget =  Vector3.Distance(transform.position, target.position);
+        
+        FollowPlayer();
 
         Chase();
 
         //ShootControl();
     }
 
+
+    void FollowPlayer()
+    {
+        Vector3 posNoRot = new Vector3(target.position.x,transform.position.y, target.position.z); //asi no se inclina
+        transform.LookAt(posNoRot); //seguimiento de player
+
+        distanceToTarget =  Vector3.Distance(transform.position, target.position);
+    }
+    
     void Chase()
     {
         chaseTime -= Time.deltaTime;

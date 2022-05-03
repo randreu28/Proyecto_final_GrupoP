@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Day7
+  m_Name: Desierto
   m_Shader: {fileID: 4800000, guid: eb3c6fb598ded4c71b8968e1c40a3b4d, type: 3}
   m_ShaderKeywords: _HORIZONLINEBLENDMODE_ADD _SUNHALOBLENDMODE_ADD _VIEW_FINAL
   m_LightmapFlags: 0
@@ -22,8 +22,8 @@ Material:
     m_Floats:
     - _HorizonLineBlendMode: 0
     - _HorizonLineContribution: 1
-    - _HorizonLineExponent: 1
-    - _SkyGradientExponent: 1
+    - _HorizonLineExponent: 30
+    - _SkyGradientExponent: 0.5
     - _SunDiscContribution: 1
     - _SunDiscExponent: 100000
     - _SunDiscExponentSize: 100000
@@ -35,8 +35,9 @@ Material:
     - _View: 0
     - __dirty: 0
     m_Colors:
-    - _HorizonLineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _HorizonLineColor: {r: 0.087401085, g: 0.23584908, b: 0, a: 0}
     - _SkyGradientBottom: {r: 0.9607844, g: 0.90196085, b: 0.7725491, a: 1}
-    - _SkyGradientTop: {r: 0.90196085, g: 0.78823537, b: 0.58431375, a: 1}
-    - _SunDiscColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SunHaloColor: {r: 0.7735849, g: 0.69111997, b: 0.62397647, a: 0}
+    - _SkyGradientTop: {r: 0.7372549, g: 0.2913787, b: 0.1960784, a: 1}
+    - _SunDiscColor: {r: 0.99175733, g: 1, b: 0.6933962, a: 1}
+    - _SunHaloColor: {r: 1, g: 0, b: 0.029075146, a: 0}
+  m_BuildTextureStacks: []
