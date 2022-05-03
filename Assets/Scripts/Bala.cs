@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-
+    public float despawn = 0.5f;
     //public GameObject Enemigo;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Bala : MonoBehaviour
     {   
         if(other.gameObject.layer == LayerMask. NameToLayer("Enemigo"))
         {
-            Destroy (other.gameObject);
+            Destroy (other.gameObject, despawn);
         }
        
         
