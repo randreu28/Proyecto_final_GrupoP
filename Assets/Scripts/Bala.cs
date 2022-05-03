@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bala : MonoBehaviour
 {
 
-    public GameObject Enemigo;
+    //public GameObject Enemigo;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +19,12 @@ public class Bala : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-
-        Destroy (gameObject);
+    {   
+        if(other.gameObject.layer == LayerMask. NameToLayer("Enemigo"))
+        {
+            Destroy (other.gameObject);
+        }
+       
         
     }
 }
