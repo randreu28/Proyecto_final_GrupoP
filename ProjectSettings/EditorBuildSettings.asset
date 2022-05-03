@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/shaderTesting.unity
-    guid: e57fdcf3db99c9d41b2cbe0f0d75e65a
-  - enabled: 1
     path: Assets/Scenes/Shooter.unity
     guid: cd4d0016c36594f4d8d6a39569c188a4
+  - enabled: 1
+    path: Assets/Scenes/Plataformeo.unity
+    guid: c0850bc671a2ad84e841d5836bdbeceb
+  - enabled: 1
+    path: Assets/Scenes/CameraCorridor.unity
+    guid: 4f83d393e50d8cf4d9104c26a9a4c01a
+  - enabled: 1
+    path: Assets/Scenes/Testing.unity
+    guid: d71c2fb7cb218314d887edaf6b05d0ad
   m_configObjects: {}
