@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 231105950}
   - component: {fileID: 231105952}
   m_Layer: 0
-  m_Name: night light
+  m_Name: NightLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 238956266}
   - component: {fileID: 238956265}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: ParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12730,7 +12730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbf75476e1153a4dae8bcf7acdb966b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: shaderTesting
+  scene: Plataformeo
   player: player
   delay: 5
   volume: {fileID: 249111868}
@@ -13516,7 +13516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbf75476e1153a4dae8bcf7acdb966b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: shaderTesting
+  scene: Testing
   player: player
   delay: 5
   volume: {fileID: 249111868}

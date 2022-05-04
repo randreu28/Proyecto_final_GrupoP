@@ -15,7 +15,21 @@ public class Shooter : MonoBehaviour
 
     private float shotRateTime = 0;
 
+    public float recoilForce = 4f; //Fuerza de retroceso
 
+    public GameObject pistola;
+
+    public Vector3 uwu;
+
+    private void Start()
+    {
+        uwu = pistola.transform.localPosition;
+    }
+    private void Update()
+    {
+
+        pistola.transform.localPosition = Vector3.Lerp(pistola.transform.localPosition, uwu, Time.deltaTime * 5f); //pistola vuelve a su posicion
+    }
 
     // Update is called once per frame
     void OnFire1(InputValue input)
@@ -25,7 +39,11 @@ public class Shooter : MonoBehaviour
         {   
             if (Time.time > shotRateTime)
             {
+
+                
                 GameObject newbala;
+
+                AddRecoil();
 
                 newbala = Instantiate(bala, spawnBala.position, spawnBala.rotation);
 
@@ -42,6 +60,15 @@ public class Shooter : MonoBehaviour
         
     }
 
+    private void AddRecoil()
+    {
+
+        
+        pistola.transform.Rotate(-recoilForce, 0f, 0f);
+        pistola.transform.position = pistola.transform.position - pistola.transform.right * (recoilForce/50f);
+    }
+
+    
 
     
 } 
