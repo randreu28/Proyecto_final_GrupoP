@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4779111492883904634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.388, y: 1.421, z: 1.1522}
-  m_LocalScale: {x: 0.035, y: 0.035, z: 0.035}
+  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,4 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef24ddc8ec5d2e4aba41b60db80dfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemigo: {fileID: 8985460098458419892, guid: 1ac7c59e7523d6f47ae606fa2135b83a, type: 3}
+  despawn: 0.5
+  balaMuzzle: {fileID: 2290615617502659194, guid: aa1c2bd3cbd649d4b80c280945dc82c1, type: 3}
+  ParticulaSangre: {fileID: 1355629546843428425, guid: f9c9b83e540ca454798644a59af014da, type: 3}

@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    public float despawn = 0.5f;
-    //public GameObject Enemigo;
+    public float despawn = 5f;
+
+    public Transform balaMuzzle;
+
+    public GameObject ParticulaSangre;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +26,12 @@ public class Bala : MonoBehaviour
     {   
         if(other.gameObject.layer == LayerMask. NameToLayer("Enemigo"))
         {
+
+            GameObject ParticulaClone = Instantiate(ParticulaSangre, balaMuzzle.position, Quaternion.Euler(balaMuzzle.forward), transform);
             Destroy (other.gameObject, despawn);
         }
        
         
     }
+
 }

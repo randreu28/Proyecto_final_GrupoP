@@ -21,6 +21,10 @@ public class Shooter : MonoBehaviour
 
     public Vector3 uwu;
 
+    public Transform gunMuzzle;
+
+    public GameObject ParticulaBala;
+
     private void Start()
     {
         uwu = pistola.transform.localPosition;
@@ -40,8 +44,9 @@ public class Shooter : MonoBehaviour
             if (Time.time > shotRateTime)
             {
 
-                
                 GameObject newbala;
+
+                ParticulaBalas();
 
                 AddRecoil();
 
@@ -66,6 +71,12 @@ public class Shooter : MonoBehaviour
         
         pistola.transform.Rotate(-recoilForce, 0f, 0f);
         pistola.transform.position = pistola.transform.position - pistola.transform.right * (recoilForce/50f);
+    }
+
+    private void ParticulaBalas()
+    {
+        GameObject ParticulaClone = Instantiate(ParticulaBala, gunMuzzle.position, Quaternion.Euler(gunMuzzle.forward), transform);
+        Destroy(ParticulaClone, 2f);
     }
 
     
