@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Shooter : MonoBehaviour
+public class Recoil : MonoBehaviour
 {
     // Start is called before the first frame update
     public static Shooter instance;
     public GameObject bala;
-    public Transform spawnBala;
+    
 
     public float shotForce = 2000;
     public float shotRate = 1f;
@@ -17,7 +17,6 @@ public class Shooter : MonoBehaviour
 
     public float recoilForce = 4f; //Fuerza de retroceso
 
-    public GameObject pistola;
 
 
     // Update is called once per frame
@@ -29,20 +28,9 @@ public class Shooter : MonoBehaviour
             if (Time.time > shotRateTime)
             {
 
-                
-                GameObject newbala;
-
                 AddRecoil();
-
-                newbala = Instantiate(bala, spawnBala.position, spawnBala.rotation);
-
-                newbala.GetComponent<Rigidbody>().AddForce(spawnBala.forward*shotForce);
-
+               
                 shotRateTime = Time.time + shotRate;
-
-                
-
-                Destroy (newbala, 4);
 
             }
         }
@@ -52,12 +40,9 @@ public class Shooter : MonoBehaviour
     private void AddRecoil()
     {
 
-        
-        pistola.transform.Rotate(-recoilForce, 0f, 0f);
-        pistola.transform.position = pistola.transform.position - pistola.transform.right * (recoilForce/50f);
+        Debug.Log("hola");
+        transform.Rotate(-recoilForce, 0f, 0f);
+        transform.position = transform.position - transform.forward * (recoilForce/50f);
     }
 
-    
-
-    
-} 
+}
