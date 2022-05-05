@@ -815,10 +815,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1244630961}
     - target: {fileID: 8985460098458419894, guid: 1ac7c59e7523d6f47ae606fa2135b83a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985460098458419894, guid: 1ac7c59e7523d6f47ae606fa2135b83a, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8985460098458419883, guid: 1ac7c59e7523d6f47ae606fa2135b83a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ac7c59e7523d6f47ae606fa2135b83a, type: 3}
 --- !u!1 &761318696 stripped
 GameObject:
@@ -1214,7 +1219,6 @@ GameObject:
   - component: {fileID: 1180141806}
   - component: {fileID: 1180141805}
   - component: {fileID: 1180141810}
-  - component: {fileID: 1180141811}
   - component: {fileID: 283026637}
   m_Layer: 3
   m_Name: Enemigo
@@ -1345,22 +1349,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!54 &1180141811
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180141804}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1202306802
 GameObject:
   m_ObjectHideFlags: 0
