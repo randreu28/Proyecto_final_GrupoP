@@ -30,14 +30,20 @@ public class PlatformController : MonoBehaviour
 
     IEnumerator Move(Vector3 targetTransform)
     {
-        for (float t = 0; t <= time; t += Time.deltaTime)
+        /* for (float t = 0; t <= time; t += Time.deltaTime)
         {
             float x = Mathf.Clamp01(t / time);
-            float f = 3 * Mathf.Pow(x, 2) - 2 * Mathf.Pow(x, 3);
-
             transform.position =
-                Vector3.Lerp(transform.position, targetTransform, f);
+                Vector3.Lerp(transform.position, targetTransform, x);
+            yield return null;
+        } */
+        float timeElapsed = 0;
+        while (timeElapsed < time)
+        {
+            transform.position =  Vector3.Lerp(transform.position, targetTransform, (timeElapsed / time)/50);
+            timeElapsed += Time.deltaTime;
             yield return null;
         }
+        transform.position = targetTransform;
     }
 }

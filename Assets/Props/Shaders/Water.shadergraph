@@ -1452,7 +1452,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "Cutout",
+    "m_Name": "CutOut",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -1732,8 +1732,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -677.0000610351563,
-            "y": 429.0001525878906,
+            "x": -639.0,
+            "y": 316.0000305175781,
             "width": 208.0,
             "height": 302.0
         }
@@ -2508,10 +2508,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -403.00006103515627,
-            "y": 155.00001525878907,
-            "width": 207.99998474121095,
-            "height": 301.9999694824219
+            "x": -674.0,
+            "y": -151.0,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
