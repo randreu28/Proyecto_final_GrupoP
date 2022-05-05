@@ -126,5 +126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   despawn: 0.5
+  despawnSangre: 0.5
   balaMuzzle: {fileID: 2290615617502659194, guid: aa1c2bd3cbd649d4b80c280945dc82c1, type: 3}
   ParticulaSangre: {fileID: 1355629546843428425, guid: f9c9b83e540ca454798644a59af014da, type: 3}
