@@ -20,6 +20,12 @@ public class EnemigoController : MonoBehaviour
     public float chaseInterval = 2f;
     float chaseTime;
 
+    public GameObject bala;
+    public Transform spawnBala;
+    public float shotForce = 2000;
+    public float shotRate = 1f;
+    private float shotRateTime = 0;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -32,12 +38,13 @@ public class EnemigoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         FollowPlayer();
 
         Chase();
 
-        //ShootControl();
+        ShootControl();
+
     }
 
 
@@ -65,19 +72,27 @@ public class EnemigoController : MonoBehaviour
 
    
 
-    /* void ShootControl()
+    void ShootControl()
     {
         shootTime -= Time.deltaTime;
+
         if(shootTime < 0)
         {
             if(distanceToTarget < shootDistance)
             {
                 shootTime = shootInterval;
-                GameObject bala = Shooter.newbala(false);
-                bala.transform.position = gun.position;
-                bala.transform.LookAt(target.position);
+
+                GameObject newbala;
+
+                newbala = Instantiate(bala, spawnBala.position, spawnBala.rotation);
+
+                //newbala.GetComponent<Rigidbody>().AddForce(spawnBala.forward*shotForce);
+
+                shotRateTime = Time.time + shotRate;
+
+                newbala.transform.LookAt(target.position);
 
             }
         }
-    } */
+    } 
 }
