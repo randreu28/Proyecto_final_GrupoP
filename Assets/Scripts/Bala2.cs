@@ -10,11 +10,11 @@ public class Bala2 : MonoBehaviour
     public float lifeDuration = 2f;
     float lifeTimer;
 
-    /* public GameObject bloodEffect;
-
-    private Image _bloodEffect; */
+    //public Image bloodEffect;
 
     public float despawn = 5f;
+
+    
 
     /* private float r;
     private float g;
@@ -26,14 +26,21 @@ public class Bala2 : MonoBehaviour
     {
         lifeTimer = lifeDuration;
 
-        /* _bloodEffect = bloodEffect.GetComponent<Image>();
+        /* bloodEffect = GetComponent<Image>();
 
-        r = _bloodEffect.color.r;
+        var blood = bloodEffect.color;
+
+        blood.a = 150f;
+
+        bloodEffect.color = blood; */
+
+
+       /*  r = _bloodEffect.color.r;
         g = _bloodEffect.color.g;
         b = _bloodEffect.color.b;
         a = _bloodEffect.color.a;
 
-        a = 255; */
+        a = 255;  */
 
     }
 
@@ -41,6 +48,8 @@ public class Bala2 : MonoBehaviour
     void Update()
     {
         BorrarBala(); //elimina el object bala2(clone)
+
+        
     }
 
     private void FixedUpdate()
