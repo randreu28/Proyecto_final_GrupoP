@@ -111,8 +111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 26
   lifeDuration: 4
-  bloodEffect: {fileID: 0}
   despawn: 2
+  SonidoHit: {fileID: 2163599362067836386, guid: e21061b3684012a4494bc9815dfc3fa6, type: 3}
+  SonidoRevolver: {fileID: 7806406930659978836, guid: 0c8088a98c1ff46479208a1f8f30a1db, type: 3}
 --- !u!54 &7904730612668978658
 Rigidbody:
   m_ObjectHideFlags: 0

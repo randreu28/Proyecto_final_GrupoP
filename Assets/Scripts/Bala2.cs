@@ -5,51 +5,28 @@ using UnityEngine.UI;
 
 public class Bala2 : MonoBehaviour
 {
-
     public float speed = 8f;
-    public float lifeDuration = 2f;
-    float lifeTimer;
 
-    //public Image bloodEffect;
+    public float lifeDuration = 2f;
+
+    float lifeTimer;
 
     public float despawn = 5f;
 
-    
+    public GameObject SonidoHit;
 
-    /* private float r;
-    private float g;
-    private float b;
-    private float a; */
-    
+    public GameObject SonidoRevolver;
 
     void Start()
     {
         lifeTimer = lifeDuration;
 
-        /* bloodEffect = GetComponent<Image>();
-
-        var blood = bloodEffect.color;
-
-        blood.a = 150f;
-
-        bloodEffect.color = blood; */
-
-
-       /*  r = _bloodEffect.color.r;
-        g = _bloodEffect.color.g;
-        b = _bloodEffect.color.b;
-        a = _bloodEffect.color.a;
-
-        a = 255;  */
-
+        
     }
 
-    
     void Update()
     {
         BorrarBala(); //elimina el object bala2(clone)
-
-        
     }
 
     private void FixedUpdate()
@@ -58,35 +35,21 @@ public class Bala2 : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {   
-        if(other.gameObject.layer == LayerMask. NameToLayer("player"))
-        {
-            
-            Debug.Log("Me hago danyo");
-
-            //a += 0.1f;
-            //_bloodEffect.color.a = a;
-        } 
-
-        //a = Mathf.Clamp(a, 0, 1f);
-
-        //ChangeColor();
-    }
-
-
-    /* private void ChangeColor()
     {
-        Color c = new Color(r,g,b,a);
-        _bloodEffect.color = c;
-    } */ 
+        if (other.gameObject.layer == LayerMask.NameToLayer("player"))
+        {
+            Instantiate (SonidoHit);
+            Instantiate(SonidoRevolver);
+            Debug.Log("Ouch");
+        }
+    }
 
     void BorrarBala()
     {
         lifeTimer -= Time.deltaTime;
-        if(lifeTimer <= 0)
+        if (lifeTimer <= 0)
         {
             Destroy (gameObject, despawn);
         }
     }
-
 }

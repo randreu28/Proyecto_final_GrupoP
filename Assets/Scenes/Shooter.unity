@@ -1089,12 +1089,13 @@ MonoBehaviour:
   bala: {fileID: 4779111492883904634, guid: 51222a1916363c64fa37b712e6291e4d, type: 3}
   spawnBala: {fileID: 224034929}
   shotForce: 2000
-  shotRate: 1
-  recoilForce: 4
+  shotRate: 1.5
+  recoilForce: 10
   pistola: {fileID: 761318696}
   zero: {x: 0, y: 0, z: 0}
   gunMuzzle: {fileID: 224034929}
   ParticulaBala: {fileID: 3813733456682369543, guid: 830b965a72fc2b040bdbb6fcbef9882e, type: 3}
+  SonidoDisparo: {fileID: 4557501757470861948, guid: 8aab635fda049e048a62884c116b0c1d, type: 3}
 --- !u!136 &1244630963
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1932,6 +1933,14 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3300416361899019181, guid: 1017df14911df7649854cdc5ecff340f, type: 3}
+      propertyPath: SonidoCarga
+      value: 
+      objectReference: {fileID: 8405838612813409472, guid: b15c9223e9832dd44be5bac26942677c, type: 3}
+    - target: {fileID: 3300416361899019181, guid: 1017df14911df7649854cdc5ecff340f, type: 3}
+      propertyPath: SonidoRevolver
+      value: 
+      objectReference: {fileID: 7806406930659978836, guid: 0c8088a98c1ff46479208a1f8f30a1db, type: 3}
+    - target: {fileID: 3300416361899019181, guid: 1017df14911df7649854cdc5ecff340f, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1806184429}
@@ -1961,9 +1970,17 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7090438886589274989, guid: e83f27b9232155647a51ee6315367b88, type: 3}
+      propertyPath: SonidoCarga
+      value: 
+      objectReference: {fileID: 8405838612813409472, guid: b15c9223e9832dd44be5bac26942677c, type: 3}
+    - target: {fileID: 7090438886589274989, guid: e83f27b9232155647a51ee6315367b88, type: 3}
       propertyPath: edgeDistance
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7090438886589274989, guid: e83f27b9232155647a51ee6315367b88, type: 3}
+      propertyPath: SonidoRevolver
+      value: 
+      objectReference: {fileID: 7806406930659978836, guid: 0c8088a98c1ff46479208a1f8f30a1db, type: 3}
     - target: {fileID: 7090438886589274989, guid: e83f27b9232155647a51ee6315367b88, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 

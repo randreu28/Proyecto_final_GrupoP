@@ -202,8 +202,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 2356693290911201114, guid: 7e0a3c52126be3546986525eecfbb3d1, type: 3}
   Gun: {fileID: 0}
+  SonidoCarga: {fileID: 8405838612813409472, guid: b15c9223e9832dd44be5bac26942677c, type: 3}
+  SonidoRevolver: {fileID: 7806406930659978836, guid: 0c8088a98c1ff46479208a1f8f30a1db, type: 3}
   shootDistance: 10
   shootInterval: 3
   bala: {fileID: 3804474096893511705, guid: cf197a261cac41344a6ab5a376f6aa38, type: 3}

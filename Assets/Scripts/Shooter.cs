@@ -22,6 +22,8 @@ public class Shooter : MonoBehaviour
 
     public GameObject ParticulaBala;
 
+    public GameObject SonidoDisparo;
+
     private void Start()
     {
         zero = pistola.transform.localPosition;
@@ -43,6 +45,8 @@ public class Shooter : MonoBehaviour
 
                 AddRecoil();
 
+                Instantiate(SonidoDisparo);
+            
                 newbala = Instantiate(bala, spawnBala.position, spawnBala.rotation);
 
                 newbala.GetComponent<Rigidbody>().AddForce(spawnBala.forward*shotForce);

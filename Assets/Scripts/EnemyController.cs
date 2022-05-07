@@ -38,6 +38,10 @@ public class EnemyController: MonoBehaviour
     public Transform target;
     public Transform Gun;
 
+    public GameObject SonidoCarga;
+
+    public GameObject SonidoRevolver;
+
     public float shootDistance =10f;
     public float shootInterval = 2f; //tiempo entre disparos
     float shootTime; 
@@ -215,13 +219,19 @@ public class EnemyController: MonoBehaviour
 
         if(shootTime < 0)
         {
+
+            Instantiate(SonidoCarga);
             if(distanceToTarget < shootDistance)
             {
                 shootTime = shootInterval;
 
                 GameObject newbala;
 
+                Instantiate(SonidoCarga);
+
                 newbala = Instantiate(bala, spawnBala.position, spawnBala.rotation);
+
+                Instantiate(SonidoRevolver);
 
                 shotRateTime = Time.time + shotRate;
 
