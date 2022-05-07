@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Sway : MonoBehaviour
 {
+    //Balanceo de la pistola
 
     private Quaternion originLocalRotation;
     
@@ -11,20 +12,15 @@ public class Sway : MonoBehaviour
 
     public float tiempo = 10f;
     
-    
-
-    // Start is called before the first frame update
     void Start()
     {
         originLocalRotation = transform.localRotation;
     }
 
-    // Update is called once per frame
     void Update()
     {
         UpdateSway();
     }
-
   
     private void UpdateSway()
     {
@@ -39,7 +35,5 @@ public class Sway : MonoBehaviour
         Quaternion t_targerRotation = originLocalRotation * t_xAngleAdjustment * t_yAngleAdjustment;
 
         transform.localRotation = Quaternion.Lerp(transform.localRotation, t_targerRotation, Time.deltaTime * tiempo);
-    }
-
-    
+    }  
 }
