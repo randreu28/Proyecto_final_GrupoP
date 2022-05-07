@@ -112,6 +112,7 @@ MonoBehaviour:
   speed: 26
   lifeDuration: 4
   bloodEffect: {fileID: 2734188023089458860, guid: 5f9a0edcda0cfdf4b8ffe4a62968770a, type: 3}
+  despawn: 2
 --- !u!54 &7904730612668978658
 Rigidbody:
   m_ObjectHideFlags: 0

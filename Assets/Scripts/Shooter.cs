@@ -19,7 +19,7 @@ public class Shooter : MonoBehaviour
 
     public GameObject pistola;
 
-    public Vector3 uwu;
+    public Vector3 zero;
 
     public Transform gunMuzzle;
 
@@ -27,12 +27,12 @@ public class Shooter : MonoBehaviour
 
     private void Start()
     {
-        uwu = pistola.transform.localPosition;
+        zero = pistola.transform.localPosition;
     }
     private void Update()
     {
 
-        pistola.transform.localPosition = Vector3.Lerp(pistola.transform.localPosition, uwu, Time.deltaTime * 5f); //pistola vuelve a su posicion
+        pistola.transform.localPosition = Vector3.Lerp(pistola.transform.localPosition, zero, Time.deltaTime * 5f); //pistola vuelve a su posicion
     }
 
     // Update is called once per frame
