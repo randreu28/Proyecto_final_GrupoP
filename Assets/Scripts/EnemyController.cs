@@ -96,10 +96,10 @@ public class EnemyController: MonoBehaviour
 
         if (!m_CaughtPlayer)
         {
+
             Move(speedRun);
             navMeshAgent.SetDestination(m_PlayerPosition);  //Set de la direccion del enemy a la ubicacion del player
 
-            
             ShootControl();
             
         }
@@ -220,7 +220,6 @@ public class EnemyController: MonoBehaviour
         if(shootTime < 0)
         {
 
-            Instantiate(SonidoCarga);
             if(distanceToTarget < shootDistance)
             {
                 shootTime = shootInterval;

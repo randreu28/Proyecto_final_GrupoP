@@ -15,8 +15,6 @@ public class Bala2 : MonoBehaviour
 
     public GameObject SonidoHit;
 
-    public GameObject SonidoRevolver;
-
     void Start()
     {
         lifeTimer = lifeDuration;
@@ -39,7 +37,6 @@ public class Bala2 : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("player"))
         {
             Instantiate (SonidoHit);
-            Instantiate(SonidoRevolver);
             Debug.Log("Ouch");
         }
     }
