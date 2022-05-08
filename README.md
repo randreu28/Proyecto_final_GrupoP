@@ -31,6 +31,14 @@ Puntos que toca la escena:
 - Extra
 >El mapa es un asset de unity, pero fue rediseñado para utilizar nuestra iluminación (probes, reflexiones)
 
+### **Escena Plataformeo**
+Puntos que toca la escena:
+- Shaders
+- Audio
+- Programming
+- Extra
+>El mapa y props son descargados de internet
+
 Esperamos que os haya gustado tanto como a nosotros nos a gustado crearlo!
 
 [Github]: <https://github.com/randreu28/Proyecto_final_GrupoP>
