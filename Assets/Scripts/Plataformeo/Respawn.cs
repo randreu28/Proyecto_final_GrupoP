@@ -8,9 +8,9 @@ public class Respawn : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if(collider.transform.tag == "Player")
+
+        if(collider.gameObject.layer == LayerMask.NameToLayer("player"))
         {
-            Debug.Log("???");
             collider.gameObject.transform.position = spawnPoint.position;
         }
     }

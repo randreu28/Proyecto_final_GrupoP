@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maze.unity
     guid: 5acf798220626694c97b9334372eab27
+  - enabled: 1
+    path: Assets/Scenes/Plataformeo.unity
+    guid: c0850bc671a2ad84e841d5836bdbeceb
   m_configObjects: {}
