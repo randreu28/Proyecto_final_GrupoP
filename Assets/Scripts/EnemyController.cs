@@ -100,7 +100,7 @@ public class EnemyController: MonoBehaviour
             Move(speedRun);
             navMeshAgent.SetDestination(m_PlayerPosition);  //Set de la direccion del enemy a la ubicacion del player
 
-            //ShootControl();
+            ShootControl();
             
         }
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)  // Controla si el enemy llega a la posicion del player
