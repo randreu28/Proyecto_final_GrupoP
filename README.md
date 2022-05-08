@@ -27,17 +27,16 @@ Puntos que toca la escena:
 ### **Escena Sci Fi**
 Puntos que toca la escena:
 - Lights
-- Audio
-- Extra
->El mapa es un asset de unity, pero fue rediseñado para utilizar nuestra iluminación (probes, reflexiones)
+- Programming
+>El mapa es un asset de unity, pero fue rediseñado para utilizar nuestra iluminación (probes, reflexiones). Los scripts de la puerta y el audio son del propio asset, sin embargo los scripts y el modelado de las camaras son propios.
 
 ### **Escena Plataformeo**
 Puntos que toca la escena:
 - Shaders
-- Audio
 - Programming
+- Animations
 - Extra
->El mapa y props son descargados de internet
+>El mapa y props son descargados de internet. El rig y animaciones se han adaptado a nuestro caso particular.
 
 Esperamos que os haya gustado tanto como a nosotros nos a gustado crearlo!
 
