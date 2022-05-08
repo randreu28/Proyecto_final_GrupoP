@@ -11,6 +11,7 @@ public class Respawn : MonoBehaviour
 
         if(collider.gameObject.layer == LayerMask.NameToLayer("player"))
         {
+            Debug.Log("caca");
             collider.gameObject.transform.position = spawnPoint.position;
         }
     }

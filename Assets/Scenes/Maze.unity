@@ -20031,7 +20031,7 @@ GameObject:
   - component: {fileID: 626023281}
   - component: {fileID: 626023280}
   - component: {fileID: 626023279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29993,12 +29993,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905214851}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.761089, y: -0.104379654, z: 3.4060202}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -0.5846278, y: -18117.158, z: 5.2646537}
+  m_LocalScale: {x: 0.20000002, y: 0.2, z: 1000}
   m_Children: []
-  m_Father: {fileID: 1579839729}
-  m_RootOrder: 1
+  m_Father: {fileID: 1158838050}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &905214853
 MonoBehaviour:
@@ -38044,12 +38044,13 @@ GameObject:
   - component: {fileID: 1158838053}
   - component: {fileID: 1158838052}
   - component: {fileID: 1158838051}
+  - component: {fileID: 1158838056}
   m_Layer: 0
   m_Name: portalLight (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1158838050
 Transform:
@@ -38061,7 +38062,8 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -0.013333334, y: 0.87000006, z: 9.445074}
   m_LocalScale: {x: 1.6666667, y: 0.00033333336, z: 1.6666667}
-  m_Children: []
+  m_Children:
+  - {fileID: 905214852}
   m_Father: {fileID: 1579839729}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
@@ -38079,7 +38081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene: Lobby
   player: player
-  delay: 0
+  delay: 5
   volume: {fileID: 905214853}
 --- !u!65 &1158838052
 BoxCollider:
@@ -38205,6 +38207,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158838049}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1158838056
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158838049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2.0000005, z: 1.0000004}
+  m_Center: {x: 0.00000011920929, y: 0.005859375, z: -0.00000008940698}
 --- !u!1 &1162310917
 GameObject:
   m_ObjectHideFlags: 0
@@ -53785,7 +53800,6 @@ Transform:
   m_LocalScale: {x: 7.0235367, y: 7.0235367, z: 7.0235367}
   m_Children:
   - {fileID: 1158838050}
-  - {fileID: 905214852}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -71313,7 +71327,8 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -0.013333334, y: 0.87000006, z: 9.445074}
   m_LocalScale: {x: 1.6666667, y: 0.00033333336, z: 1.6666667}
-  m_Children: []
+  m_Children:
+  - {fileID: 1747336400088963531}
   m_Father: {fileID: 5410500934912204461}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
@@ -71324,12 +71339,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5639532324292198687}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.761089, y: -0.104379654, z: 3.4060202}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: -0.5846278, y: -18117.162, z: 5.264653}
+  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1000}
   m_Children: []
-  m_Father: {fileID: 5410500934912204461}
-  m_RootOrder: 1
+  m_Father: {fileID: 1523685974208534526}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2356693290016074760
 GameObject:
@@ -71342,7 +71357,7 @@ GameObject:
   - component: {fileID: 2356693290016074765}
   - component: {fileID: 2356693290016074766}
   - component: {fileID: 2356693290016074767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cinemachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71393,7 +71408,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 2.149592, y: 1}
+    m_SensorSize: {x: 1.7118791, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -71508,7 +71523,7 @@ GameObject:
   - component: {fileID: 2356693291108844492}
   - component: {fileID: 2356693291108844338}
   - component: {fileID: 2356693291108844339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -71579,7 +71594,7 @@ GameObject:
   - component: {fileID: 2356693291185715905}
   - component: {fileID: 2356693291185715910}
   - component: {fileID: 5807271999767508587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -71736,7 +71751,7 @@ GameObject:
   - component: {fileID: 2356693291509639795}
   - component: {fileID: 2356693291509639692}
   - component: {fileID: 2356693291509639693}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71949,7 +71964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene: Lobby
   player: player
-  delay: 0
+  delay: 5
   volume: {fileID: 3529326803421968514}
 --- !u!33 &4691843006340631909
 MeshFilter:
@@ -71971,7 +71986,6 @@ Transform:
   m_LocalScale: {x: 10.242871, y: 10.242871, z: 10.242871}
   m_Children:
   - {fileID: 1523685974208534526}
-  - {fileID: 1747336400088963531}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -72038,6 +72052,7 @@ GameObject:
   - component: {fileID: 3747597994126115769}
   - component: {fileID: 5909634042173838019}
   - component: {fileID: 4356458041703014017}
+  - component: {fileID: 5857936079042622837}
   m_Layer: 0
   m_Name: portalLight (4)
   m_TagString: Untagged
@@ -72045,6 +72060,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
+--- !u!65 &5857936079042622837
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857936079042622836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2.0000002, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!65 &5909634042173838019
 BoxCollider:
   m_ObjectHideFlags: 0
