@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Plataformeo.unity
     guid: c0850bc671a2ad84e841d5836bdbeceb
+  - enabled: 1
+    path: Assets/Scenes/Testing.unity
+    guid: d71c2fb7cb218314d887edaf6b05d0ad
   m_configObjects: {}
