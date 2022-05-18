@@ -8,13 +8,12 @@ using System.Collections.Generic;
 public class ChangeScene : MonoBehaviour
 {
     public string scene;
-    public string player;
     public float delay;
     public Volume volume;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == player)
+        if (other.gameObject.tag == "Player")
             StartCoroutine(changeScene());
     }
 

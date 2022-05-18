@@ -3318,7 +3318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1039175365114152889, guid: e2c08b90a366dcc4abdba53272b3e0fe, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.9630996
+      value: 1.9704797
       objectReference: {fileID: 0}
     - target: {fileID: 1139361496258829524, guid: e2c08b90a366dcc4abdba53272b3e0fe, type: 3}
       propertyPath: m_Layer
@@ -6175,7 +6175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Lobby
-  player: player
   delay: 5
   volume: {fileID: 270103505}
 --- !u!108 &1975966914
