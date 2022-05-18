@@ -14,7 +14,11 @@ public class ChangeScene : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
+        {
             StartCoroutine(changeScene());
+            var AudioSource = GetComponent<AudioSource>();
+            AudioSource.Play();
+        }
     }
 
     IEnumerator changeScene() //1. Creixer fins al tamany doble en 1s
