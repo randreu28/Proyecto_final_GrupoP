@@ -13885,7 +13885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1653540202
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14036,7 +14036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbf75476e1153a4dae8bcf7acdb966b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Lobby
+  scene: Testing
   delay: 5
   volume: {fileID: 249111868}
 --- !u!1 &1653675127 stripped
