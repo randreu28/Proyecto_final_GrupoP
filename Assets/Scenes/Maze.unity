@@ -17872,6 +17872,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3350079809430554396, guid: 4c0d2f718017f9840ab852d33a04434b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350079809430554396, guid: 4c0d2f718017f9840ab852d33a04434b, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -17882,6 +17886,10 @@ PrefabInstance:
     - target: {fileID: 3350079809430554396, guid: 4c0d2f718017f9840ab852d33a04434b, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350079809430554396, guid: 4c0d2f718017f9840ab852d33a04434b, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6871961215549033518, guid: 4c0d2f718017f9840ab852d33a04434b, type: 3}
       propertyPath: targetlight
