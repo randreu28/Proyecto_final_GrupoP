@@ -68,8 +68,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnGUI()
     {
-        GUILayout.Label("Spid: " + new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude);
-        GUILayout.Label("SpidUp: " + rb.velocity.y);
+        GUILayout.Label("Speed: " + new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude);
+        GUILayout.Label("SpeedUp: " + rb.velocity.y);
     }
 
     void Update()
