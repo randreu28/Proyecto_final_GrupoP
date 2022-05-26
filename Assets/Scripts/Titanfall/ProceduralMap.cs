@@ -13,6 +13,7 @@ public class ProceduralMap : MonoBehaviour
     void Start()
     {
         float _rotationX = rotatesX ? 1*(Random.Range(0,4)*45) : 1;
+        _rotationX = _rotationX % 90 == 0 ? _rotationX + 45 : _rotationX;
         float _rotationY = rotatesY ? 1*(Random.Range(0,4)*45) : 1;
         float _rotationZ = rotatesZ ? 1*(Random.Range(0,4)*45) : 1;
 
