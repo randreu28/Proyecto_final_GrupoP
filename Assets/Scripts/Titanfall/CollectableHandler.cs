@@ -5,27 +5,49 @@ using UnityEngine.UI;
 
 public class CollectableHandler : MonoBehaviour
 {
-    public AudioClip AudioClip;
+    public AudioClip collectableSound;
     [Range(0, 1)]
-    public float volume = 1f;
-    public GameObject ScoreText;
+    public float collectableVolume = 1f;
+    
+    [Space(15)]
 
-    private AudioSource SFX;
-    private float Score = 0;
+    public AudioClip negativeSound;
+    [Range(0, 1)]
+    public float negativeVolume = 1f;
+
+    [Space(15)]
+
+    public GameObject scoreText;
+
+    private AudioSource collectableSFX;
+    private AudioSource negativeSFX;
+    private float score = 0;
 
     void Awake(){
-        SFX = gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
-        SFX.clip = AudioClip;
-        SFX.volume = volume;
-        SFX.pitch = SFX.pitch - 0.1f;
+        //Collectable
+        collectableSFX = gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
+        collectableSFX.clip = collectableSound;
+        collectableSFX.volume = collectableVolume;
+        collectableSFX.pitch = collectableSFX.pitch - 0.1f;
+
+        //Negative
+        negativeSFX = gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
+        negativeSFX.clip = negativeSound;
+        negativeSFX.volume = negativeVolume;
     }
 
-    public void CollectCoin()
+    public void Collectable(float value)
     {
-        SFX.pitch = SFX.pitch + 0.1f;
-        SFX.Play();
-        Score = Score + 10;
-        ScoreText.GetComponent<Text>().text = "Score: " + Score;
+        collectableSFX.pitch = collectableSFX.pitch + 0.1f;
+        collectableSFX.Play();
+        score = score + value;
+        scoreText.GetComponent<Text>().text = "Score: " + score;
     }
 
+    public void Negative(float value)
+    {
+        negativeSFX.Play();
+        score = score - value;
+        scoreText.GetComponent<Text>().text = "Score: " + score;
+    }
 }

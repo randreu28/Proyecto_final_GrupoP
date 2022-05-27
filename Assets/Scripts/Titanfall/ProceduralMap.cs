@@ -4,29 +4,34 @@ using UnityEngine;
 
 public class ProceduralMap : MonoBehaviour
 {
-    public Material[] Materials;
+    public Material[] materials;
+    public GameObject collectable;
 
-    public bool rotatesX = false;
-    public bool rotatesY = false;
-    public bool rotatesZ = false;
+    public float max_X = 20f;
+    public float max_Y = 40f;
+    public float max_Z = 20f;
+
+    [Range (0, 1)]
+    public float randomness = 0.5f;
 
     void Start()
     {
-        float _rotationX = rotatesX ? 1*(Random.Range(0,4)*45) : 1;
-        _rotationX = _rotationX % 90 == 0 ? _rotationX + 45 : _rotationX;
-        float _rotationY = rotatesY ? 1*(Random.Range(0,4)*45) : 1;
-        float _rotationZ = rotatesZ ? 1*(Random.Range(0,4)*45) : 1;
+        if(Random.value > randomness)
+        {
+            //Bulding
+            GameObject building = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            building.transform.localScale = new Vector3(Random.Range(1 ,max_X/10f)*10, Random.Range(1 ,max_Y/10f)*10, Random.Range(1 ,max_Z/10f)*10);
+            building.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + building.transform.localScale.y/2, gameObject.transform.position.z);
+            building.transform.rotation = Quaternion.Euler(new Vector3(1, Random.Range(0,4)*45, 1));
+            building.GetComponent<Renderer>().material = materials[Random.Range(0, materials.Length)];
 
-        /* Instantiate(
-            Prefabs[Random.Range(0, Prefabs.Length)],
-            transform.position,
-            Quaternion.Euler(new Vector3(_rotationX, _rotationY, _rotationZ))
-        ); */
+            //Collectable
+            GameObject myCollectable = Instantiate(collectable, new Vector3(building.transform.position.x, building.transform.position.y * 2 + 5, building.transform.position.z), Quaternion.identity);
 
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.transform.localScale = new Vector3(5, Random.Range(1,5)*10, 5);
-        cube.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + gameObject.transform.localScale.y/2, gameObject.transform.position.z);
-        cube.transform.rotation = Quaternion.Euler(new Vector3(1, _rotationY, 1));
-        cube.GetComponent<Renderer>().material = Materials[Random.Range(0, Materials.Length)];
+            //Not really necessary. Just for order
+            building.transform.parent = GameObject.Find("Enviroment").transform;
+            building.name = "Building";
+            myCollectable.transform.parent = building.transform;
+        }
     }
 }
