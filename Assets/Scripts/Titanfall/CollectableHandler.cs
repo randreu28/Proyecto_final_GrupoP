@@ -18,10 +18,10 @@ public class CollectableHandler : MonoBehaviour
     [Space(15)]
 
     public GameObject scoreText;
+    public float score = 0;
 
     private AudioSource collectableSFX;
     private AudioSource negativeSFX;
-    private float score = 0;
 
     void Awake(){
         //Collectable
@@ -41,6 +41,7 @@ public class CollectableHandler : MonoBehaviour
         collectableSFX.pitch = collectableSFX.pitch + 0.1f;
         collectableSFX.Play();
         score = score + value;
+        BroadcastMessage("OnScoreChange", score);
         scoreText.GetComponent<Text>().text = "Score: " + score;
     }
 
@@ -48,6 +49,7 @@ public class CollectableHandler : MonoBehaviour
     {
         negativeSFX.Play();
         score = score - value;
+        BroadcastMessage("OnScoreChange", score);
         scoreText.GetComponent<Text>().text = "Score: " + score;
     }
 }
