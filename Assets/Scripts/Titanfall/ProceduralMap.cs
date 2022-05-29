@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProceduralMap : MonoBehaviour
 {
     public Material[] materials;
-    public GameObject collectable;
+    public GameObject[] collectables;
 
     public float max_X = 20f;
     public float max_Y = 40f;
@@ -26,7 +26,7 @@ public class ProceduralMap : MonoBehaviour
             building.GetComponent<Renderer>().material = materials[Random.Range(0, materials.Length)];
 
             //Collectable
-            GameObject myCollectable = Instantiate(collectable, new Vector3(building.transform.position.x, building.transform.position.y * 2 + 5, building.transform.position.z), Quaternion.identity);
+            GameObject myCollectable = Instantiate(collectables[Random.Range(0, collectables.Length)], new Vector3(building.transform.position.x, building.transform.position.y * 2 + 5, building.transform.position.z), Quaternion.identity);
 
             //Not really necessary. Just for order
             building.transform.parent = GameObject.Find("Enviroment").transform;

@@ -28,25 +28,25 @@ public class myMixer : MonoBehaviour
             mixer.TransitionToSnapshots(SnapShots, myWeights, transitionSpeed);
             GameObject.Find("MusicStage").GetComponent<Text>().text = "Music Stage: 1";  
         }
-        else if(score <= 10)
+        else if(score <= 20)
         {
             float[] myWeights = { 0, 1, 0, 0, 0}; 
             mixer.TransitionToSnapshots(SnapShots, myWeights, transitionSpeed);
             GameObject.Find("MusicStage").GetComponent<Text>().text = "Music Stage: 2";  
         }
-        else if(score <= 20)
+        else if(score <= 30)
         {
             float[] myWeights = { 0, 0, 1, 0, 0}; 
             mixer.TransitionToSnapshots(SnapShots, myWeights, transitionSpeed);
             GameObject.Find("MusicStage").GetComponent<Text>().text = "Music Stage: 3";  
         }
-        else if(score <= 30)
+        else if(score <= 40)
         {
             float[] myWeights = { 0, 0, 0, 1, 0}; 
             mixer.TransitionToSnapshots(SnapShots, myWeights, transitionSpeed);
             GameObject.Find("MusicStage").GetComponent<Text>().text = "Music Stage: 4";  
         }
-        else if (score <= 40)
+        else
         {
             float[] myWeights = {0, 0, 0, 0, 1}; 
             mixer.TransitionToSnapshots(SnapShots, myWeights, transitionSpeed);
