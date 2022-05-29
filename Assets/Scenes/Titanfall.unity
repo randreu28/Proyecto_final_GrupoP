@@ -467,7 +467,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6035286507509933875, guid: bfa780dea7cd66345a0b1c96fdc7dc30, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 42ce9d8ab72160f4f96a1eeb491bd67e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b20ab5c2018b12c4480850ccbd5cb929, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -860,7 +860,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3591519981512664004, guid: bfa780dea7cd66345a0b1c96fdc7dc30, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 93a41a4d3fbcf4546b9da10eda1db208, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c1a7c2b1446fa7c4ea5f4eb683234ed1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1588,6 +1588,85 @@ MonoBehaviour:
   max_Y: 70
   max_Z: 20
   randomness: 0.5
+--- !u!1 &838438470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838438471}
+  - component: {fileID: 838438473}
+  - component: {fileID: 838438472}
+  m_Layer: 5
+  m_Name: MusicStage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &838438471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838438470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1052782522}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 308}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &838438472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838438470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 141
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Music Stage: 1'
+--- !u!222 &838438473
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838438470}
+  m_CullTransparentMesh: 1
 --- !u!1 &895036502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,6 +1849,7 @@ RectTransform:
   m_Children:
   - {fileID: 1770783261}
   - {fileID: 1876051584}
+  - {fileID: 838438471}
   m_Father: {fileID: 1097268824}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1819,7 +1899,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1831441305905068750, guid: bfa780dea7cd66345a0b1c96fdc7dc30, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 7bcc1d23d6d90654ba5b0b21b36707ce, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2abc1e7d6c33f0247bebc597a00e6e70, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1978,7 +2058,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3581204782683764005, guid: bfa780dea7cd66345a0b1c96fdc7dc30, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 71c97634ae5882045a9520861165cbdd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dc4acc62db7380c4f8ef0c1fd28de8a8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2306,7 +2386,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5323763029022852085, guid: bfa780dea7cd66345a0b1c96fdc7dc30, type: 2}
-  m_audioClip: {fileID: 8300000, guid: a40a3caadc1db2f4dac5a2725ff4bb90, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5d3f5065b74cde24da3c9c8b6ade5475, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
