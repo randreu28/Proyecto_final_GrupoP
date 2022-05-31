@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fireworks : MonoBehaviour
 {
+    public GameObject FireworkSystem;
     public ParticleSystem myFireworks;
     public float scoreTrigger = 100f;
 
@@ -29,6 +30,7 @@ public class Fireworks : MonoBehaviour
     }
     private IEnumerator handleFireworks()
     {
+        FireworkSystem.SetActive(true);
         myFireworks.Play(true);
         yield return new WaitForSeconds(2.5f);
         SFX.Play();
