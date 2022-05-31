@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4649008916109489588}
   - component: {fileID: 490389811651970954}
   - component: {fileID: 1608446070440162277}
+  - component: {fileID: 3056745589697689010}
   - component: {fileID: 2309628680163571859}
-  - component: {fileID: 2309628680163571858}
   - component: {fileID: 2309628680163571860}
   - component: {fileID: 2309628680163571861}
   m_Layer: 0
@@ -85,6 +85,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3056745589697689010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309628680163571857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2916f7c0489e09b4a882a4b9ee8bf84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 25
+  effect: {fileID: 319465240741627304, guid: e13805b03b3427f47a4cff3850b19892, type: 3}
 --- !u!114 &2309628680163571859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,19 +114,6 @@ MonoBehaviour:
   bounceSpeed: 3
   height: 0.5
   rotationSpeed: 35
---- !u!114 &2309628680163571858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2309628680163571857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313b81b0d28651146bf9badae12228e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: 25
 --- !u!135 &2309628680163571860
 SphereCollider:
   m_ObjectHideFlags: 0
