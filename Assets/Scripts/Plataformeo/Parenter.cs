@@ -6,27 +6,20 @@ using UnityEngine.InputSystem;
 
 public class Parenter : MonoBehaviour
 {
-    public GameObject player;
-
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider _is)
     {
-        if (_is.gameObject == player)
+        if (_is.gameObject.tag == "Player")
         {
-            
-            player.transform.parent = transform;
+            _is.gameObject.transform.parent = transform;
         }
     }
 
     private void OnTriggerExit(Collider _is)
     {
-        if (_is.gameObject == player)
+        if (_is.gameObject.tag == "Player")
         {
-            player.transform.parent = null;
+            _is.gameObject.transform.parent = null;
         }
     }
 

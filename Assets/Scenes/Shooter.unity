@@ -434,6 +434,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5639532323027342826, guid: ef464d24cb13c25479648d181dad664e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5857936078197121409, guid: ef464d24cb13c25479648d181dad664e, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3525,7 +3529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307d29a9cb0f1ef45960471d77175204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensidad: 30
+  intensidad: 15
   tiempo: 10
 --- !u!1 &768610881 stripped
 GameObject:
@@ -7214,6 +7218,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5410500936348568152, guid: ef464d24cb13c25479648d181dad664e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639532323027342826, guid: ef464d24cb13c25479648d181dad664e, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6152307498963481754, guid: ef464d24cb13c25479648d181dad664e, type: 3}
