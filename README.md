@@ -1,4 +1,4 @@
-# **Entorns Virtuals - Proyecto final -  Grupo P**
+# **Entornos Virtuales - Proyecto final -  Grupo P**
 
 Bienvenido a nuestro proyecto de unity! Ha sido creado como un proyecto de universidad para la clase de entornos virtuales.  Puedes encontrar el repositorio en [Github].
 
