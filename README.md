@@ -2,7 +2,7 @@
 
 Bienvenido a nuestro proyecto de unity! Ha sido creado como un proyecto de universidad para la clase de entornos virtuales.  Puedes encontrar el repositorio en [Github].
 
-Nuestro proyecto consiste en un lobby principal con 4 portales a las cuatro diferentes escenas. A continuación ciertas anotaciones de cada escena:
+Nuestro proyecto consiste en un lobby principal con 4 portales a las cuatro diferentes escenas. A continuación ciertas anotaciones de cada escena para el profesorado:
 
 ### **Escena lobby**
 Puntos que toca la escena:
